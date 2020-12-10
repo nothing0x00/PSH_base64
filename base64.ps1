@@ -1,0 +1,10 @@
+﻿Write-Output ""
+Write-Output "Simple Base64 Decoding Utility in Powershell"
+Write-Output ""
+$string = Read-Host -Prompt "Base64 Encoded String: "
+Write-Output ""
+Write-Output "Decoded String: "
+Write-Output "------------------------------"
+[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String($string))
+Write-Output ""
+Write-Output "------------------------------"
